@@ -1,0 +1,37 @@
+<header id="title-block-header" class="quarto-title-block default">
+
+  <div style="text-align: center; margin: 0 0 1.5rem 0;">
+    <img src="figuras/logo_geag_1.jpg"
+         alt="Logomarca do GEAG"
+         style="max-width: 260px; max-height: 100px;">
+  </div>
+
+  <div class="quarto-title">
+    $if(title)$
+    <h1 class="title">$title$</h1>
+    $endif$
+
+    $if(subtitle)$
+    <p class="subtitle lead">$subtitle$</p>
+    $endif$
+
+    $if(categories)$
+    $if(quarto-template-params.title-block-categories)$
+    <div class="quarto-categories">
+      $for(categories)$
+      <div class="quarto-category">$categories$</div>
+      $endfor$
+    </div>
+    $endif$
+    $endif$
+  </div>
+
+  $if(hide-description)$
+  $elseif(description)$
+  <div>
+    <div class="description">$description$</div>
+  </div>
+  $endif$
+
+  $title-metadata.html()$
+</header>

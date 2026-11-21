@@ -180,12 +180,12 @@ window.Quarto = {
 </section>
 <section id="o-modelo-de-regressão" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="o-modelo-de-regressão"><span class="header-section-number">2</span> O modelo de regressão</h2>
-<p>Em um modelo com <span class="math inline">\(p\)</span> variáveis explicativas, podemos escrever a regressão linear como</p>
+<p>Em um modelo com <span class="math inline">\(k\)</span> variáveis explicativas, podemos escrever a regressão linear como</p>
 <p><span class="math display">\[
-Y_i = \beta_0 + \sum_{k=1}^{p}\beta_k X_{i,k} + \varepsilon_i,
+Y_i = \beta_0 + \sum_{k=1}^{k}\beta_k X_{i,k} + \varepsilon_i,
 \]</span></p>
 <p>em que <span class="math inline">\(i\)</span> identifica a observação e <span class="math inline">\(k\)</span> identifica a variável explicativa. Assim, <span class="math inline">\(X_{i,k}\)</span> é o valor da variável <span class="math inline">\(k\)</span> na observação <span class="math inline">\(i\)</span>, e <span class="math inline">\(\beta_k\)</span> é o coeficiente associado a essa variável. Essa convenção corresponde à organização usual da matriz de dados, com observações nas linhas e variáveis nas colunas.</p>
-<p>No exemplo deste material há apenas uma variável explicativa (<span class="math inline">\(p=1\)</span>). Portanto, o modelo se reduz a</p>
+<p>No exemplo deste material, há apenas uma variável explicativa (<span class="math inline">\(p=1\)</span>); portanto, o modelo se reduz a</p>
 <p><span class="math display">\[
 Y_i = \beta_0 + \beta_1 X_{i,1} + \varepsilon_i,
 \]</span></p>

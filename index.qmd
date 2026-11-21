@@ -32,15 +32,15 @@ Este material apresenta uma forma de interpretar os coeficientes de uma regress�
 
 ## O modelo de regressão
 
-Em um modelo com $p$ variáveis explicativas, podemos escrever a regressão linear como
+Em um modelo com $k$ variáveis explicativas, podemos escrever a regressão linear como
 
 $$
-Y_i = \beta_0 + \sum_{k=1}^{p}\beta_k X_{i,k} + \varepsilon_i,
+Y_i = \beta_0 + \sum_{k=1}^{k}\beta_k X_{i,k} + \varepsilon_i,
 $$
 
 em que $i$ identifica a observação e $k$ identifica a variável explicativa. Assim, $X_{i,k}$ é o valor da variável $k$ na observação $i$, e $\beta_k$ é o coeficiente associado a essa variável. Essa convenção corresponde à organização usual da matriz de dados, com observações nas linhas e variáveis nas colunas.
 
-No exemplo deste material há apenas uma variável explicativa ($p=1$). Portanto, o modelo se reduz a
+No exemplo deste material, há apenas uma variável explicativa ($p=1$); portanto, o modelo se reduz a
 
 $$
 Y_i = \beta_0 + \beta_1 X_{i,1} + \varepsilon_i,
